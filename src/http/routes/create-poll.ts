@@ -1,7 +1,5 @@
 import z from "zod";
 import { FastifyInstance } from "fastify";
-
-// libs
 import { prisma } from "lib";
 
 export const createPoll = async (app: FastifyInstance) => {
