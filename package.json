@@ -21,6 +21,7 @@
     "dev": "tsx watch src/http/server.ts"
   },
   "dependencies": {
+    "@prisma/client": "5.9.1",
     "fastify": "^4.26.0"
   },
   "devDependencies": {
