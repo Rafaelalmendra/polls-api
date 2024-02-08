@@ -1,5 +1,5 @@
 import fastify from "fastify";
-import { createPoll } from "routes";
+import { createPoll } from "http/routes";
 
 const app = fastify();
 app.register(createPoll);
