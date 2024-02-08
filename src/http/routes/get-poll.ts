@@ -16,6 +16,14 @@ export const getPoll = async (app: FastifyInstance) => {
       where: {
         id: pollId,
       },
+      include: {
+        options: {
+          select: {
+            id: true,
+            title: true,
+          },
+        },
+      },
     });
 
     return reply.send({ responsePoll });
